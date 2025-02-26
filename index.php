@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕄𝕚𝕟𝕔𝕖𝕔𝕣𝕒𝕗𝕥</h1>
+    <h1>Welcome to Mincecraft</h1>
 </body>
 
 </html

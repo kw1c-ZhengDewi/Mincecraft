@@ -3,12 +3,47 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
+body {
+    background-image: url(../images/Wallpaper-BG/Dirtblock.png);
+    background-repeat: repeat;
+    background-position: 100%;
+    background-size: contain;
+}
+
+main {
+}
+
+nav {
+    display: flex;
+    background-color: gray;
+}
+
+#Logo-header {
+    width: 25%;
+}
+
+#nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-header a {
+    color: white;
+    text-decoration: none;
+}
+
 
  /* README: Here I got a pre-template for media queries,
  for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s

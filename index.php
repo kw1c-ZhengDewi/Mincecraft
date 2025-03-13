@@ -20,7 +20,13 @@
     <?php include 'includes/navigation.php'; ?>
 </header>
 
+<main>
+    <div>
+    </div>
+</main>
+
 <?php include 'includes/footer.php'; ?>
 
 </body>
 </html>
+    

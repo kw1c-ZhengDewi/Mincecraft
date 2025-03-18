@@ -58,7 +58,7 @@ main {
     width: 15rem;
 }
 
-/* !!! Damin werkt hier onder: !!! */
+
 footer {
     background-color: #222;
     padding-bottom: 25px;
@@ -95,6 +95,23 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.footer-mojang img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-xbox img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-microsoft img {
+    height: 50px;
+    max-width: 100%;
+}
+
+
 
 .footer-mojang img {
     height: 50px;
@@ -156,3 +173,4 @@ written by "Dewi", you can remove this comment after you've read the message.
 
 /* xs */
 @media (max-width: 475px) {}
+

@@ -105,6 +105,18 @@ ul {
     margin: 2rem;
 }
 
+
+
+
+
+
+
+
+
+* {
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+=======
 footer {
     background-color: #222;
     padding-bottom: 25px;
@@ -113,65 +125,108 @@ footer {
     color: white;
     font-size: 14px;
     width: 100%;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/Wallpaper-BG/Dirtblock.png);
+    background-repeat: repeat;
+    background-position: 100%;
+    background-size: contain;
+}
+
+main {
+}
+
+
+#nav-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray; /* Testen */
+}
+
+.Logo-header {
+    width: 12vw; /* Alleen voor desktop, later bewerken in media queries */
+    padding: 8px;
+}
+
+/* Creeper logo en naam */
+#logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adds space between the images */
+}
+
+#group-logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+=======
+.footer-xbox img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-microsoft img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-mojang img {
+    height: 50px;
+    max-width: 100%;
+
+}
+
+.footer-xbox img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-microsoft img {
+    height: 50px;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.footer-mojang {
+.footer-mojang
+{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 500px;
+    height: 20vh;
+    margin-bottom: -200px;
+    margin-left: -300px;
 }
 
 .footer-xbox {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 20vh;
+    margin-bottom: -50px;
 }
-
-.footer-microsoft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-mojang img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-mojang img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
-
 
 /* README: Here I got a pre-template for media queries,
 for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s

@@ -1,5 +1,4 @@
 
-
 <footer>
     <div class="footer-container">
         <div class="footer-logos">
@@ -14,7 +13,5 @@
             </div>
         </div>
     </div>
-
 </footer>
-
 

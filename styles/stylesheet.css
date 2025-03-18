@@ -1,3 +1,16 @@
+/* Gebruik jullie hier de gewenste fonts */
+/* Font 1: minecraftia  */
+@font-face {
+    font-family: 'minecraftia';
+    src: url("/fonts/minecraftia/Minecraftia-Regular.ttf");
+}
+
+/* Font 2: roboto-remix-font */
+@font-face {
+    font-family: 'Roboto-Remix-Font';
+    src: url("/fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
+}
+
 * {
     scroll-behavior: smooth !important;
     box-sizing: border-box;
@@ -73,6 +86,9 @@ ul {
 #nav-header a {
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 #search-account-div {
@@ -96,9 +112,20 @@ ul {
 
 
 
+
 * {
     scroll-behavior: smooth !important;
     box-sizing: border-box;
+=======
+footer {
+    background-color: #222;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+
 }
 
 html {
@@ -155,8 +182,6 @@ main {
     height: 50px;
     max-width: 100%;
 }
-
-
 
 .footer-mojang img {
     height: 50px;

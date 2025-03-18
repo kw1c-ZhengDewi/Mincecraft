@@ -8,9 +8,9 @@
     <title>Mincecraft</title>
 
     <!-- stylesheet for all pages  -->
-    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
     <!--  stylesheet only for this page  -->
-    <link rel="stylesheet" href="styles/home.css"
+    <link rel="stylesheet" href="./styles/home.css"
 </head>
 
 <body>

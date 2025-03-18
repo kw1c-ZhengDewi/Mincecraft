@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Authors-->
+<!-- Authors -->
 
 <head>
     <meta charset="UTF-8">

@@ -58,7 +58,7 @@ main {
     width: 15rem;
 }
 
-/* Damin werkt hier onder */
+
 footer {
     background-color: #222;
     padding-bottom: 25px;
@@ -113,14 +113,27 @@ footer {
 
 
 
+.footer-mojang img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-xbox img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-microsoft img {
+    height: 50px;
+    max-width: 100%;
+}
 
 
+/* README: Here I got a pre-template for media queries,
+for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s
 
- /* README: Here I got a pre-template for media queries,
- for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s
-
- written by "Dewi", you can remove this comment after you've read the message.
- */
+written by "Dewi", you can remove this comment after you've read the message.
+*/
 
 /* The mobile-first pre-defined media queries: */
  /*    xs*/

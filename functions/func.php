@@ -1,4 +1,5 @@
 <?php
+
 function get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE) {
     $max_score = max($personalityA, $personalityB, $personalityC, $personalityD, $personalityE);
     if ($max_score == $personalityA) {

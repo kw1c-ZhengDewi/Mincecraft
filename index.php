@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Authors-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mincecraft</title>
+
+    <!-- stylesheet for all pages  -->
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <!--  stylesheet only for this page  -->
+    <link rel="stylesheet" href="./styles/home.css"
 </head>
 
 <body>
-    <h1>Welcome to Mincecraft</h1>
-<p>bleh</p>
-</body>
 
-</html>
+<header>
+    <?php include 'includes/navigation.php'; ?>
+</header>
 
+<main>
+    <div>
+    </div>
+</main>
 
 <?php include 'includes/footer.php'; ?>
-<?php include 'includes/header.php'; ?>
-<?php include 'includes/navigation.php'; ?>
 
+</body>
+</html>
+    

@@ -1,60 +1,9 @@
 
-footer {
-    background-color: #222;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    width: 100%;
-}
-
-.footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-mojang {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 500px;
-}
-
-.footer-xbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-microsoft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-mojang img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
 
 
 
 
-=======
+
 * {
     scroll-behavior: smooth !important;
     box-sizing: border-box;
@@ -115,6 +64,34 @@ main {
     width: 15rem;
 }
 
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-mojang
+{
+    display: flex;
+    height: 20vh;
+    margin-bottom: -200px;
+    margin-left: -300px;
+}
+
+.footer-xbox {
+    display: flex;
+    height: 20vh;
+    margin-bottom: -50px;
+}
 
 
 

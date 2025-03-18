@@ -59,14 +59,65 @@ main {
 }
 
 
+/* Damin werkt hier onder: */
+footer {
+    background-color: #222;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-mojang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 500px;
+}
+
+.footer-xbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-microsoft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mojang img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-xbox img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.footer-microsoft img {
+    height: 50px;
+    max-width: 100%;
+}
 
 
+/* README: Here I got a pre-template for media queries,
+for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s
 
- /* README: Here I got a pre-template for media queries,
- for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s
-
- written by "Dewi", you can remove this comment after you've read the message.
- */
+written by "Dewi", you can remove this comment after you've read the message.
+*/
 
 /* The mobile-first pre-defined media queries: */
  /*    xs*/

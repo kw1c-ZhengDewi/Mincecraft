@@ -10,7 +10,7 @@
     </div>
 
 <!--  Community navigation  -->
-    <div>
+    <div class="groupFlex">
        <ul>
            <li>
                <a href="#">Community</a>
@@ -19,8 +19,8 @@
     </div>
 
     <!--  Search and account  -->
-    <div>
-        <ul>
+    <div class="groupFlex" id="search-account-div">
+        <ul id="search-account">
             <li>
                 <a href="#">Search</a>
             </li>

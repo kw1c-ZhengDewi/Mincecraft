@@ -24,7 +24,6 @@ body {
 main {
 }
 
-
 #nav-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,15 +46,47 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
+    gap: 10px;
 }
 
 /* Logo Mincecraft Test */
 #mincecraft-header_text {
-    width: 27.6rem;
+    width: 25.4rem;
 }
 
 #creeper-header_icon {
-    width: 15rem;
+    width: 6rem;
+}
+
+.groupFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav-header a {
+    color: white;
+    text-decoration: none;
+}
+
+#search-account-div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+#search-account
+ {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20pt;
+    margin: 2rem;
 }
 
 

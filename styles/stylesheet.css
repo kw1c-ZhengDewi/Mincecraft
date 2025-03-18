@@ -105,18 +105,11 @@ ul {
     margin: 2rem;
 }
 
-
-
-
-
-
-
-
-
 * {
     scroll-behavior: smooth !important;
     box-sizing: border-box;
-=======
+}
+
 footer {
     background-color: #222;
     padding-bottom: 25px;
@@ -172,7 +165,8 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
-=======
+}
+
 .footer-xbox img {
     height: 50px;
     max-width: 100%;
@@ -271,5 +265,8 @@ written by "Dewi", you can remove this comment after you've read the message.
 @media (max-width: 640px) {}
 
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+}
+
+
 

@@ -39,32 +39,32 @@ include "../functions/func.php";
 
 <h2>Personality Quiz</h2>
 <form method="post">
-    <label>1. How do you approach new tasks? <br>
+    <label>1. Wat is het eerste wat je doe in een nieuwe wereld? <br>
     <input type="radio" name="q1" value="A" required> I dive in headfirst.<br>
     <input type="radio" name="q1" value="B"> I plan carefully before starting.<br>
     <input type="radio" name="q1" value="C"> I take my time and observe.<br><br>
     </label><br>
 
-    <label>2. What motivates you most? <br>
+    <label>2.  Speel je liever samen met mensen of alleen?  <br>
     <input type="radio" name="q2" value="A" required> Achieving goals.<br>
     <input type="radio" name="q2" value="B"> Working with others.<br>
     <input type="radio" name="q2" value="C"> Learning and growth.<br><br>
     </label><br>
 
-    <label>3. How do you handle stress? <br>
+    <label>3. Wanneer vind je een server een succes <br>
     <input type="radio" name="q3" value="A" required> I get things done quickly.<br>
     <input type="radio" name="q3" value="B"> I talk to others about it.<br>
     <input type="radio" name="q3" value="C"> I take time for myself to relax.<br><br>
     </label><br>
 
-    <label>4. How do you prefer to work? <br>
+    <label>4. Wat verdiep je je al in als je Minecraft speel <br>
     <input type="radio" name="q4" value="A" required> friendship forever <br>
     <input type="radio" name="q4" value="B"> In a team.<br>
     <input type="radio" name="q4" value="D"> A mix of both.<br><br>
     </label><br>
 
 
-    <label>5. What’s your approach to learning? <br>
+    <label>5. Waar wil je je nog in verdiepen wat je nog niet goed kan in Minecraft?  <br>
     <input type="radio" name="q5" value="A" required> I prefer hands-on experience.<br>
     <input type="radio" name="q5" value="B"> I like to read and gather information.<br>
     <input type="radio" name="q5" value="E"> I learn by experimenting and trying new things.<br><br>

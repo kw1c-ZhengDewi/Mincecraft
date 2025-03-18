@@ -2,13 +2,13 @@
 /* Font 1: minecraftia */
 @font-face {
     font-family: 'minecraftia';
-    src: url("/fonts/minecraftia/Minecraftia-Regular.ttf");
+    src: url("../fonts/minecraftia/Minecraftia-Regular.ttf");
 }
 
 /* Font 2: roboto-remix-font */
 @font-face {
     font-family: 'Roboto-Remix-Font';
-    src: url("/fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
+    src: url("../fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
 }
 
 * {

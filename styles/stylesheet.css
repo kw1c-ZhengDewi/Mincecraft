@@ -81,25 +81,42 @@ body {
 main {
 }
 
-nav {
+
+#nav-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray; /* Testen */
+}
+
+.Logo-header {
+    width: 12vw; /* Alleen voor desktop, later bewerken in media queries */
+    padding: 8px;
+}
+
+/* Creeper logo en naam */
+#logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adds space between the images */
+}
+
+#group-logo {
     display: flex;
-    background-color: gray;
+    justify-content: center;
+    align-content: center;
 }
 
-#Logo-header {
-    width: 25%;
+/* Logo Mincecraft Test */
+#mincecraft-header_text {
+    width: 27.6rem;
 }
 
-#nav-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#creeper-header_icon {
+    width: 15rem;
 }
 
-#nav-header a {
-    color: white;
-    text-decoration: none;
-}
+
+
 
 
  /* README: Here I got a pre-template for media queries,

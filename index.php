@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Authors: -->
+<!-- Authors: Dewi, Connor, Damian -->
 
 <head>
     <meta charset="UTF-8">

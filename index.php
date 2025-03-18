@@ -17,7 +17,7 @@
 <body>
 
 <header>
-    <?php include 'includes/navigation.php'; ?>
+    <?php include __DIR__ . '/includes/navigation.php'; ?>
 </header>
 
 <main>
@@ -25,7 +25,7 @@
     </div>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 
 </body>
 </html>

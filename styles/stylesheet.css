@@ -1,14 +1,14 @@
 /* Gebruik jullie hier de gewenste fonts */
-/* Font 1: minecraftia  */
+/* Font 1: minecraftia */
 @font-face {
     font-family: 'minecraftia';
-    src: url("/fonts/minecraftia/Minecraftia-Regular.ttf");
+    src: url("../fonts/minecraftia/Minecraftia-Regular.ttf");
 }
 
 /* Font 2: roboto-remix-font */
 @font-face {
     font-family: 'Roboto-Remix-Font';
-    src: url("/fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
+    src: url("../fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
 }
 
 * {
@@ -105,100 +105,6 @@ ul {
     margin: 2rem;
 }
 
-
-
-
-
-
-
-
-
-* {
-    scroll-behavior: smooth !important;
-    box-sizing: border-box;
-=======
-footer {
-    background-color: #222;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    width: 100%;
-
-}
-
-html {
-    overflow-x: hidden;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-body {
-    background-image: url(../images/Wallpaper-BG/Dirtblock.png);
-    background-repeat: repeat;
-    background-position: 100%;
-    background-size: contain;
-}
-
-main {
-}
-
-
-#nav-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: gray; /* Testen */
-}
-
-.Logo-header {
-    width: 12vw; /* Alleen voor desktop, later bewerken in media queries */
-    padding: 8px;
-}
-
-/* Creeper logo en naam */
-#logo {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Adds space between the images */
-}
-
-#group-logo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-=======
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-mojang img {
-    height: 50px;
-    max-width: 100%;
-
-}
-
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
-
 footer {
     background-color: #222;
     color: #fff;
@@ -226,6 +132,14 @@ footer {
     display: flex;
     height: 20vh;
     margin-bottom: -50px;
+}
+
+.footer-microsoft {
+    position:absolute;
+    display: flex;
+    height: 10vh;
+    margin-bottom: -200px;
+    margin-left: 600px;
 }
 
 /* README: Here I got a pre-template for media queries,
@@ -271,5 +185,8 @@ written by "Dewi", you can remove this comment after you've read the message.
 @media (max-width: 640px) {}
 
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+}
+
+
 

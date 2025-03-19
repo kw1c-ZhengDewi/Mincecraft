@@ -1,29 +1,65 @@
 <?php
 // Define variables for each personality type
-$personalityA = 0;
-$personalityB = 0;
-$personalityC = 0;
-$personalityD = 0;
-$personalityE = 0;
+$personalityA = 0; // Steve
+$personalityB = 0; // Iron Golem
+$personalityC = 0; // Creeper
+$personalityD = 0; // Enderman
+$personalityE = 0; // Ender Dragon
 
-// Check if the form is submitted and calculate points
+// Define custom point allocation per question-answer combination
+$point_allocation = [
+    'q1' => [
+        'A' => ['A' => 3, 'B' => 1],
+        'B' => ['C' => 3, 'D' => 1],
+        'C' => ['E' => 3, 'A' => 1],
+        'D' => ['B' => 3, 'C' => 1]
+    ],
+    'q2' => [
+        'A' => ['B' => 3, 'C' => 1],
+        'B' => ['A' => 3, 'D' => 2],
+        'C' => ['E' => 3, 'C' => 1],
+        'D' => ['A' => 3, 'B' => 1]
+    ],
+    'q3' => [
+        'A' => ['C' => 3, 'E' => 1],
+        'B' => ['D' => 3, 'B' => 2],
+        'C' => ['A' => 3, 'D' => 1],
+        'D' => ['E' => 3, 'B' => 1]
+    ],
+    'q4' => [
+        'A' => ['A' => 3, 'E' => 1],
+        'B' => ['B' => 3, 'C' => 1],
+        'C' => ['D' => 3, 'A' => 1],
+        'D' => ['E' => 3, 'B' => 1]
+    ],
+    'q5' => [
+        'A' => ['A' => 3, 'C' => 1],
+        'B' => ['B' => 3, 'D' => 1],
+        'C' => ['E' => 3, 'A' => 1],
+        'D' => ['C' => 3, 'B' => 1]
+    ]
+];
+
+// Process form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Each question is evaluated, adding points to the corresponding personality
-    $q1 = $_POST['q1'];
-    $q2 = $_POST['q2'];
-    $q3 = $_POST['q3'];
-    $q4 = $_POST['q4'];
-    $q5 = $_POST['q5'];
-
-    // Personality points for each question
-    $personalityA += ($q1 == "A") ? 1 : ($q1 == "B" ? 0.5 : 0);
-    $personalityB += ($q2 == "A") ? 1 : ($q2 == "B" ? 0.5 : 0);
-    $personalityC += ($q3 == "A") ? 1 : ($q3 == "C" ? 0.5 : 0);
-    $personalityD += ($q4 == "A") ? 1 : ($q4 == "D" ? 0.5 : 0);
-    $personalityE += ($q5 == "A") ? 1 : ($q5 == "E" ? 0.5 : 0);
+    foreach (['q1', 'q2', 'q3', 'q4', 'q5'] as $question) {
+        $answer = $_POST[$question] ?? ''; // Get selected answer
+        if ($answer && isset($point_allocation[$question][$answer])) {
+            foreach ($point_allocation[$question][$answer] as $personality => $points) {
+                switch ($personality) {
+                    case 'A': $personalityA += $points; break;
+                    case 'B': $personalityB += $points; break;
+                    case 'C': $personalityC += $points; break;
+                    case 'D': $personalityD += $points; break;
+                    case 'E': $personalityE += $points; break;
+                }
+            }
+        }
+    }
 }
+include "../functions/func.php"
+// Function to determine the highest scoring personality
 
-include "../functions/func.php";
 ?>
 
 <!DOCTYPE html>
@@ -33,49 +69,51 @@ include "../functions/func.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personality Quiz</title>
     <link rel="stylesheet" href="../styles/stylesheet..css">
-
 </head>
 <body>
 
 <h2>Personality Quiz</h2>
 <form method="post">
-    <label>1. Wat is het eerste wat je doe in een nieuwe wereld? <br>
+
+    <!--VRAAG 1-->
+    <label>1. Wat is het eerste wat je doet in een nieuwe wereld?</label><br>
     <input type="radio" name="q1" value="A" required> I dive in headfirst.<br>
     <input type="radio" name="q1" value="B"> I plan carefully before starting.<br>
-    <input type="radio" name="q1" value="C"> I take my time and observe.<br><br>
-    </label><br>
+    <input type="radio" name="q1" value="C"> I take my time and observe.<br>
+    <input type="radio" name="q1" value="D"> I ask others for advice.<br><br>
 
-    <label>2.  Speel je liever samen met mensen of alleen?  <br>
+    <!--VRAAG 2-->
+    <label>2. Speel je liever samen met mensen of alleen?</label><br>
     <input type="radio" name="q2" value="A" required> Achieving goals.<br>
     <input type="radio" name="q2" value="B"> Working with others.<br>
-    <input type="radio" name="q2" value="C"> Learning and growth.<br><br>
-    </label><br>
-
-    <label>3. Wanneer vind je een server een succes <br>
+    <input type="radio" name="q2" value="C"> Learning and growth.<br>
+    <input type="radio" name="q2" value="D"> Exploring new things.<br><br>
+    <!--VRAAG 3-->
+    <label>3. Wanneer vind je een server een succes?</label><br>
     <input type="radio" name="q3" value="A" required> I get things done quickly.<br>
     <input type="radio" name="q3" value="B"> I talk to others about it.<br>
-    <input type="radio" name="q3" value="C"> I take time for myself to relax.<br><br>
-    </label><br>
+    <input type="radio" name="q3" value="C"> I take time for myself to relax.<br>
+    <input type="radio" name="q3" value="D"> I challenge myself.<br><br>
 
-    <label>4. Wat verdiep je je al in als je Minecraft speel <br>
-    <input type="radio" name="q4" value="A" required> friendship forever <br>
+    <!--VRAAG 4-->
+    <label>4. Waar verdiep je je al in als je Minecraft speelt?</label><br>
+    <input type="radio" name="q4" value="A" required> Friendship forever.<br>
     <input type="radio" name="q4" value="B"> In a team.<br>
-    <input type="radio" name="q4" value="D"> A mix of both.<br><br>
-    </label><br>
+    <input type="radio" name="q4" value="C"> Solving puzzles.<br>
+    <input type="radio" name="q4" value="D"> Being the best.<br><br>
 
-
-    <label>5. Waar wil je je nog in verdiepen wat je nog niet goed kan in Minecraft?  <br>
+    <!--VRAAG 5-->
+    <label>5. Waar wil je je nog in verdiepen wat je nog niet goed kan in Minecraft?</label><br>
     <input type="radio" name="q5" value="A" required> I prefer hands-on experience.<br>
     <input type="radio" name="q5" value="B"> I like to read and gather information.<br>
-    <input type="radio" name="q5" value="E"> I learn by experimenting and trying new things.<br><br>
-    </label><br>
+    <input type="radio" name="q5" value="C"> I learn by experimenting and trying new things.<br>
+    <input type="radio" name="q5" value="D"> I watch others and adapt.<br><br>
 
     <input type="submit" value="Submit">
-
 </form>
 
-<?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
-    <h3>Congrats, you are <?php echo get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE); ?>!</h3>
+<?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>  <!-- listen for form submission-->
+    <h3>Congrats, you are <?php echo get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE); ?>!</h3> <!--select personality with highest score-->
     <p>Steve: <?php echo $personalityA; ?> points</p>
     <p>Iron Golem: <?php echo $personalityB; ?> points</p>
     <p>Creeper: <?php echo $personalityC; ?> points</p>

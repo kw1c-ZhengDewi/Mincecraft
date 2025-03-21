@@ -1,7 +1,7 @@
 <nav id="nav-header">
 <!-- Logo/merk -->
     <div id="logo">
-        <a id="group-logo" href="../index.php">
+        <a id="group-logo" href="<?php echo$_SERVER['DOCUMENT_ROOT']?>/index.php">
             <!--   Creeper Logo Icon         -->
             <img alt="logo" id="creeper-header_icon"  src="../images/Logo/Creeper_Logo.png">
             <!--   Mincecraft Logo Icon         -->

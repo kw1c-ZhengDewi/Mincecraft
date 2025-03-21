@@ -1,16 +1,12 @@
 <?php
-
 function get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE) {
-    $max_score = max($personalityA, $personalityB, $personalityC, $personalityD, $personalityE);
-    if ($max_score == $personalityA) {
-        return "Steve";
-    } elseif ($max_score == $personalityB) {
-        return "Iron Golem";
-    } elseif ($max_score == $personalityC) {
-        return "Creeper";
-    } elseif ($max_score == $personalityD) {
-        return "Enderman";
-    } else {
-        return "Ender Dragon";
-    }
+$personalities = [
+"Steve" => $personalityA,
+"Iron Golem" => $personalityB,
+"Creeper" => $personalityC,
+"Enderman" => $personalityD,
+"Ender Dragon" => $personalityE
+];
+arsort($personalities); // Sort in descending order
+return key($personalities); // Return highest scoring personality
 }

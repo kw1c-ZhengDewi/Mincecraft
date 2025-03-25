@@ -23,15 +23,12 @@
     </header>
 
     <main>
-
         <!-- Functioneel even testen  -->
     </main>
 
     <?php include __DIR__ . '/includes/footer.php'; ?>
-
 </div>
 
 </body>
 
 </html>
-    

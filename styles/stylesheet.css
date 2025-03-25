@@ -81,7 +81,7 @@ main {
 }
 
 #creeper-header_icon {
-    width: 6rem;
+    width: 4.4rem;
 }
 
 .groupFlex {
@@ -117,14 +117,39 @@ ul {
 }
 
 footer {
-    background-color: #222;
-    padding: 25px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    width: 100%;
+    width: 100vw;
+    height: 15%;
 }
 
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: #181818;
+}
+
+#BottomFooter {
+    display: grid;
+    justify-content: center;
+    background-color: #313131;
+}
+
+.footer-img-sizing {
+    padding: 1rem;
+}
+
+#BottomFooter{
+    display: grid;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.footer-img-sizing > img {
+    width: auto;  /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to fill the space */
+}
 
         @media (min-width: 475px) {
         }

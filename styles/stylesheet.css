@@ -34,19 +34,37 @@ body {
     background-size: contain;
 }
 
+#site-wrapper-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
+    flex: 1; /* This pushes the footer down */
 }
 
 #nav-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: gray; /* Testen */
+    z-index: 1;
+    position: sticky;
+}
+
+#nav-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 .Logo-header {
     width: 12vw; /* Alleen voor desktop, later bewerken in media queries */
     padding: 8px;
 }
+
 
 /* Creeper logo en naam */
 #logo {
@@ -60,11 +78,6 @@ main {
     justify-content: center;
     align-content: center;
     gap: 10px;
-}
-
-/* Logo Mincecraft Test */
-#mincecraft-header_text {
-    width: 25.4rem;
 }
 
 #creeper-header_icon {
@@ -83,13 +96,11 @@ ul {
     list-style: none;
 }
 
-#nav-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 1rem;
-    font-weight: bold;
+/* Logo Mincecraft Test */
+#mincecraft-header_text {
+    width: 25.4rem;
 }
+
 
 #search-account-div {
     display: flex;
@@ -105,171 +116,64 @@ ul {
     margin: 2rem;
 }
 
-
-
-
-
-
-
-
-
-* {
-    scroll-behavior: smooth !important;
-    box-sizing: border-box;
-=======
 footer {
     background-color: #222;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding: 25px;
     text-align: center;
     color: white;
     font-size: 14px;
     width: 100%;
-
-}
-
-html {
-    overflow-x: hidden;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-body {
-    background-image: url(../images/Wallpaper-BG/Dirtblock.png);
-    background-repeat: repeat;
-    background-position: 100%;
-    background-size: contain;
-}
-
-main {
 }
 
 
-#nav-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: gray; /* Testen */
-}
+        @media (min-width: 475px) {
+        }
 
-.Logo-header {
-    width: 12vw; /*  Alleen voor desktop, later bewerken in media queries */
-    padding: 8px;
-}
+        /*sm*/
+        @media (min-width: 640px) {
+        }
 
-/* Creeper logo en naam */
-#logo {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Adds space between the images */
-}
+        /*md*/
+        @media (min-width: 768px) {
+        }
 
-#group-logo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-=======
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
+        /*lg*/
+        @media (min-width: 1024px) {
+        }
 
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
+        /*xl*/
+        @media (min-width: 1280px) {
+        }
 
-.footer-mojang img {
-    height: 50px;
-    max-width: 100%;
-
-}
-
-.footer-xbox img {
-    height: 50px;
-    max-width: 100%;
-}
-
-.footer-microsoft img {
-    height: 50px;
-    max-width: 100%;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer-mojang
-{
-    display: flex;
-    height: 20vh;
-    margin-bottom: -200px;
-    margin-left: -300px;
-}
-
-.footer-xbox {
-    display: flex;
-    height: 20vh;
-    margin-bottom: -50px;
-}
-
-/* README: Here I got a pre-template for media queries,
-for more information, search here: https://www.youtube.com/watch?v=K24lUqcT0Ms&t=4s
-
-written by "Dewi", you can remove this comment after you've read the message.
-*/
-
-/* The mobile-first pre-defined media queries: */
- /*    xs*/
-     @media (min-width: 475px) {}
-
-     /*sm*/
-     @media (min-width: 640px) {}
-
-     /*md*/
-     @media (min-width: 768px) {}
-
-     /*lg*/
-     @media (min-width: 1024px) {}
-
-     /*xl*/
-     @media (min-width: 1280px) {}
-
-     /*2xl*/
-     @media (min-width: 1536px) {}
+        /*2xl*/
+        @media (min-width: 1536px) {
+        }
 
 
- /*The desktop-first pre-defined media queries:*/
- /*2xl*/
-@media (max-width: 1536px) {}
+        /*The desktop-first pre-defined media queries:*/
+        /*2xl*/
+        @media (max-width: 1536px) {
+        }
 
-/* xl */
-@media (max-width: 1280px) {}
+        /* xl */
+        @media (max-width: 1280px) {
+        }
 
-/* lg */
-@media (max-width: 1024px) {}
+        /* lg */
+        @media (max-width: 1024px) {
+        }
 
-/* md */
-@media (max-width: 768px) {}
+        /* md */
+        @media (max-width: 768px) {
+        }
 
-/* sm */
-@media (max-width: 640px) {}
+        /* sm */
+        @media (max-width: 640px) {
+        }
 
-/* xs */
-@media (max-width: 475px) {}
+        /* xs */
+        @media (max-width: 475px) {
+        }
+
+
 

@@ -65,7 +65,7 @@ include "../functions/func.php";
                 <img src="../images/Logo/#" alt="Reddit">
             </a>
         </div>
-        <h2>Personality Quiz</h2>
+        <h2>Personality Quiz.</h2>
         <form method="post">
                 <label>1. Wat is het eerste wat je doe in een nieuwe wereld? <br>
                     <input type="radio" name="q1" value="A" required> I dive in headfirst.<br>

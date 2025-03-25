@@ -6,7 +6,7 @@ $personalityC = 0; // Creeper
 $personalityD = 0; // Enderman
 $personalityE = 0; // Ender Dragon
 
-// Define custom point allocation per question-answer combination
+// Define custom point allocation per question-answer combination eg: 'A'   'A' => 3 betekent dat personality A 3 points krijgt voor dat antwoord
 $point_allocation = [
     'q1' => [
         'A' => ['A' => 3, 'B' => 1],
@@ -40,7 +40,7 @@ $point_allocation = [
     ]
 ];
 
-// Process form submission
+// Process form submission: Checked of form = submitted, loop door alle questions, allocate points, select hoogste gescoorde
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach (['q1', 'q2', 'q3', 'q4', 'q5'] as $question) {
         $answer = $_POST[$question] ?? ''; // Get selected answer
@@ -114,7 +114,7 @@ include "../functions/func.php"
 
 <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>  <!-- listen for form submission-->
     <h3>Congrats, you are <?php echo get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE); ?>!</h3> <!--select personality with highest score-->
-    <p>Steve: <?php echo $personalityA; ?> points</p>
+    <p>Steve: <?php echo $personalityA; ?> points</p> <!--TEMP, om te zien of point allocation werkt-->
     <p>Iron Golem: <?php echo $personalityB; ?> points</p>
     <p>Creeper: <?php echo $personalityC; ?> points</p>
     <p>Enderman: <?php echo $personalityD; ?> points</p>

@@ -41,33 +41,32 @@ include "../functions/func.php";
         <p>FOLLOW MINECRAFT</p>
         <div class="social-icons">
             <a href="https://www.youtube.com/minecraft" target="_blank">
-                <img src="../images/Logo/Youtube.png" alt="YouTube">
+                <img src="../images/Logo/#" alt="YouTube">
             </a>
             <a href="https://www.instagram.com/minecraft" target="_blank">
-                <img src="../images/Logo/instagram.png" alt="Instagram">
+                <img src="../images/Logo/#" alt="Instagram">
             </a>
             <a href="https://www.facebook.com/minecraft" target="_blank">
-                <img src="../images/Logo/facebook.png" alt="Facebook">
+                <img src="../images/Logo/#" alt="Facebook">
             </a>
             <a href="https://twitter.com/Minecraft" target="_blank">
-                <img src="../images/Logo/twitter.png" alt="X (Twitter)">
+                <img src="../images/Logo/#" alt="X (Twitter)">
             </a>
             <a href="https://www.tiktok.com/@minecraft" target="_blank">
-                <img src="../images/Logo/tiktok.png" alt="TikTok">
+                <img src="../images/Logo/#" alt="TikTok">
             </a>
             <a href="https://wa.me/" target="_blank">
-                <img src="../images/Logo/whatsapp.png" alt="WhatsApp">
+                <img src="../images/Logo/#" alt="WhatsApp">
             </a>
             <a href="https://discord.com/invite/minecraft" target="_blank">
-                <img src="../images/Logo/discord.png" alt="Discord">
+                <img src="../images/Logo/#" alt="Discord">
             </a>
             <a href="https://www.reddit.com/r/Minecraft/" target="_blank">
-                <img src="../images/Logo/reddit.png" alt="Reddit">
+                <img src="../images/Logo/#" alt="Reddit">
             </a>
         </div>
         <h2>Personality Quiz</h2>
         <form method="post">
-            <h3>
                 <label>1. Wat is het eerste wat je doe in een nieuwe wereld? <br>
                     <input type="radio" name="q1" value="A" required> I dive in headfirst.<br>
                     <input type="radio" name="q1" value="B"> I plan carefully before starting.<br>
@@ -111,7 +110,6 @@ include "../functions/func.php";
             <p>Enderman: <?php echo $personalityD; ?> points</p>
             <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
         <?php endif; ?>
-        </h3>
     </div>
 </body>
 </html>

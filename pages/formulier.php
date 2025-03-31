@@ -1,5 +1,4 @@
 <?php
-print_r($_COOKIE);
 // Define variables for each personality type
 $personalityA = 0; // Steve
 $personalityB = 0; // Iron Golem

@@ -12,9 +12,21 @@
 
 <!--  Community navigation  -->
     <div class="groupFlex">
-       <ul>
+       <ul id="CoreBTN">
+           <li>
+               <a href="#">Games</a>
+           </li>
+
+           <li>
+               <a href="#">Shop</a>
+           </li>
+
            <li>
                <a href="#">Community</a>
+           </li>
+
+           <li>
+               <a href="#">Support</a>
            </li>
        </ul>
     </div>
@@ -22,11 +34,11 @@
     <!--  Search and account  -->
     <div class="groupFlex" id="search-account-div">
         <ul id="search-account">
-            <li>
+            <li id="A-Search">
                 <a href="#">Search</a>
             </li>
 
-            <li>
+            <li id="A-Account">
                 <a href="#">Account</a>
             </li>
         </ul>

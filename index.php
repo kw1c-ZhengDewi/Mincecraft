@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!--
 Auteurs: Dewi, Connor, Damian
 Datum: 29-03-2025
@@ -8,6 +7,7 @@ Datum: 29-03-2025
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/Header-Icons/Favicon/favicon.ico">
     <title>Mincecraft</title>
 
     <!-- stylesheet for all pages  -->
@@ -28,20 +28,14 @@ Datum: 29-03-2025
         <?php include __DIR__ . '/includes/navigation.php'; ?>
     </header>
 
-
     <main>
         <div id="FirstImpressionText">
             <h1>Discover your character</h1>
             <h2>Welcome to the Mincecraft Official Quiz page!</h2>
 
-<!--            <div class="Form-div-BTN">-->
-<!--                <a href="./pages/formulier.php">Click here to start the quiz -->
-<!--                </a>-->
-<!--            </div>-->
-
-            <div id="TestA">
+            <div>
                 <span id="Form-div-BTN">
-                <a id="TestB" href="./pages/formulier.php">Start the quiz</a>
+                <a id="Form-a-BTN" href="./pages/formulier.php"><span id="BTN-Touches">Start the quiz</span></a>
                 </span>
             </div>
         </div>
@@ -80,10 +74,7 @@ Datum: 29-03-2025
                   Nam quis justo orci. Integer molestie commodo porta. Nunc eleifend tristique orci a viverra. Nam congue porta augue eget rhoncus. In fringilla diam at eros lacinia faucibus. Praesent aliquam eros vel orci faucibus, in sagittis lacus efficitur. Mauris non magna tristique ipsum rutrum eleifend in id massa. Aenean eget consectetur sapien, suscipit fermentum diam. Sed fermentum eros id viverra hendrerit. Proin non lorem ac sapien varius rhoncus. Nunc congue nisi at nibh auctor sodales. Etiam accumsan ultricies est nec bibendum.
               </p>
           </div>
-
         </div>
-
-
 
     </main>
 

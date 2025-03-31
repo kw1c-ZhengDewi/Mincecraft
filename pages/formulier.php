@@ -1,4 +1,5 @@
 <?php
+print_r($_COOKIE);
 // Define variables for each personality type
 $personalityA = 0; // Steve
 $personalityB = 0; // Iron Golem
@@ -147,6 +148,7 @@ include "../functions/func.php"
     <p>Creeper: <?php echo $personalityC; ?> points</p>
     <p>Enderman: <?php echo $personalityD; ?> points</p>
     <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
+
 <?php endif; ?>
 
 </body>

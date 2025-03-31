@@ -18,7 +18,7 @@ $point_allocation = [
         'A' => ['B' => 3, 'C' => 1],
         'B' => ['A' => 3, 'D' => 2],
         'C' => ['E' => 3, 'C' => 1],
-        'D' => ['A' => 3, 'B' => 1]
+        'D' => ['A' =>  3, 'B' => 1]
     ],
     'q3' => [
         'A' => ['C' => 3, 'E' => 1],
@@ -151,3 +151,8 @@ include "../functions/func.php"
 
 </body>
 </html>
+<div id="TestA">
+                <span id="Form-div-BTN">
+                <a id="TestB" href="resultaat.php">Start the quiz</a>
+                </span>
+</div>

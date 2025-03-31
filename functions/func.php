@@ -8,5 +8,10 @@ $personalities = [
 "Ender Dragon" => $personalityE
 ];
 arsort($personalities); // Sort in descending order
-return key($personalities); // Return highest scoring personality
+$chosenperson = key($personalities); // Return highest scoring personality
+
+
+setcookie("personality", $chosenperson, time() + (86400 * 30), "/");
+
+    return $chosenperson;
 }

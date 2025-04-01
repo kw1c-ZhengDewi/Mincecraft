@@ -1,3 +1,8 @@
+/*
+Auteurs: Dewi, Connor, Damian
+Datum: 32-3-2025
+*/
+
 /* Gebruik jullie hier de gewenste fonts */
 /* Font 1: minecraftia  */
 @font-face {
@@ -14,6 +19,7 @@
 * {
     scroll-behavior: smooth !important;
     box-sizing: border-box;
+    font-family: "minecraftia", serif;
 }
 
 html {
@@ -44,20 +50,32 @@ main {
     flex: 1; /* This pushes the footer down */
 }
 
+
+header {
+    top: 0;
+    z-index: 2;
+    position: sticky;
+}
+
 #nav-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: gray; /* Testen */
-    z-index: 1;
-    position: sticky;
+    background-color: rgba(19, 18, 18, 0.9);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.73);
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
 }
 
 #nav-header a {
     color: white;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 0.85rem;
     padding: 1rem;
     font-weight: bold;
+}
+
+#nav-header a:hover {
+    color: #86D562;
 }
 
 .Logo-header {
@@ -81,8 +99,15 @@ main {
 }
 
 #creeper-header_icon {
-    width: 6rem;
+    width: 4.4rem;
+    height: 70px;
 }
+
+#creeper-header_icon:hover {
+    border: ridge #dcdbdb 2px;
+    transition: 0.05s;
+}
+
 
 .groupFlex {
     display: flex;
@@ -98,7 +123,15 @@ ul {
 
 /* Logo Mincecraft Test */
 #mincecraft-header_text {
-    width: 25.4rem;
+    width: 20.4rem;;
+    height: 80px;
+}
+
+
+#CoreBTN {
+    display: flex;
+    justify-content : space-evenly;
+    gap: 10pt   ;
 }
 
 
@@ -116,17 +149,106 @@ ul {
     margin: 2rem;
 }
 
-footer {
-    background-color: #222;
-    padding: 25px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    width: 100%;
+#A-Search::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    background-image: url("../images/Header-Icons/Glass-Magnifier-Icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#A-Account::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    background-image: url("../images/Header-Icons/PersonsAccount-Icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
+
+/* Footer  */
+
+footer {
+    width: 100vw;
+    height: 15%;
+}
+
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: #181818;
+}
+
+#BottomFooter {
+    display: grid;
+    justify-content: center;
+    background-color: #313131;
+}
+
+.footer-img-sizing {
+    padding: 1rem;
+}
+
+#BottomFooter{
+    display: grid;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.footer-img-sizing > img {
+    width: auto;  /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to fill the space */
+}
+
+
+#Social-Media-Container {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 2.5rem;
+    background: black;
+    text-transform: uppercase !important;
+
+}
+
+#SM-Header {
+    font-family: Verdana, serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+
+#SM-links img {
+    width: 80px;
+    background-color: #282828;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    position: relative;
+    top: 10px;
+}
+
+#SM-links > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* responsiveness */
+
         @media (min-width: 475px) {
+
         }
 
         /*sm*/

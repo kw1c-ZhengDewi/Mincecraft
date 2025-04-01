@@ -70,7 +70,7 @@ Datum: 01-04-2025
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // ✅ Call function BEFORE any HTML output
-        $chosenperson =  get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE);
+        $chosenperson = get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE);
     }
     ?>
 
@@ -84,21 +84,11 @@ Datum: 01-04-2025
 
     <!--  stylesheet only for this page  -->
     <link rel="stylesheet" href="../styles/formulier.css">
-    <script src="../scripts/form.js" rel> </script>
+    <script src="../scripts/form.js" > </script>
 </head>
 <body>
 
-<header>
-    <?php include "../includes/navigation.php" ?>
-</header>
-
-<main>
-
-
-<div id="site-wrapper-footer">
-
 <div class="quiz-container">
-
 <h2>Personality Quiz</h2>
     <form method="post">
         <!-- Step 1 -->
@@ -169,7 +159,6 @@ Datum: 01-04-2025
         <div id="result" style="display:none;"></div>
     </form>
 
-
   <!--Function to determine the highest scoring personality-->
         <?php if ($_SERVER["REQUEST_METHOD"] === "POST") : ?>
             <h3>Congrats, you are <?php echo $chosenperson; ?>!</h3> <!--select personality with the highest score-->
@@ -180,15 +169,18 @@ Datum: 01-04-2025
     <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
         <?php endif; ?>
 
-    <div>
-    <span id="Form-div-BTN">
-        <a id="Form-a-BTN" href="resultaat.php"><span id="BTN-Touches">Start the quiz</span></a>
-    </span>
-    </div>
 </div>
 
-</div>
-
+    <?php if ($_SERVER["REQUEST_METHOD"] === "POST") : ?>
+        <h3>Congrats, you are <?php echo $chosenperson; ?>!</h3> <!--select personality with highest score-->
+        <p>Steve: <?php echo $personalityA; ?> points</p> <!--TEMP, om te zien of point allocation werkt-->
+        <p>Iron Golem: <?php echo $personalityB; ?> points</p>
+        <p>Creeper: <?php echo $personalityC; ?> points</p>
+        <p>Enderman: <?php echo $personalityD; ?> points</p>
+        <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
+    <?php endif; ?>
+</body>
+</html>
 </main>
 <?php include  '../includes/footer.php'
 ?>

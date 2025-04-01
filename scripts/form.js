@@ -2,7 +2,6 @@ function nextStep(step) {
     let currentStep = step - 1;
     let inputs = document.querySelectorAll(`#step${currentStep} input[type="radio"]`);
 
-    // Check if at least one radio button is selected
     let selected = Array.from(inputs).some(input => input.checked);
     if (!selected) {
         alert("Please select an answer before proceeding.");
@@ -11,9 +10,12 @@ function nextStep(step) {
 
     // Hide all steps
     document.querySelectorAll('.form-step').forEach(div => div.style.display = 'none');
-
-    // Show the next step
     document.getElementById('step' + step).style.display = 'block';
+
+    // If it's the last step, show the results before submitting
+    if (step === 6) {
+        showResults();
+    }
 }
 
 function prevStep(step) {
@@ -40,4 +42,22 @@ function showResults() {
     // Display the result message
     document.getElementById('result').innerHTML = result;
     document.getElementById('result').style.display = 'block';
+
+    // Add the "Zie je Resultaten" link after displaying the results
+    let resultLinkHTML = `
+        <div>
+            <span id="Form-div-BTN">
+                <a id="Form-a-BTN" href="resultaat.php"><span id="BTN-Touches">Zie je Resultaten</span></a>
+            </span>
+        </div>
+    `;
+
+    // Add the link below the results
+    document.getElementById('result').innerHTML += resultLinkHTML;
+
+    // Submit the form after showing the results (after a delay)
+    setTimeout(() => {
+        let form = document.querySelector('form');
+        form.submit(); // Submit the form after 3 seconds
+}, 300000000000000); // Delay submission for 3 seconds (adjust as needed)
 }

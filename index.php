@@ -60,19 +60,21 @@ Datum: 29-03-2025
         </div>
         </div>
 
-
-
         <!--  Hier wordt Minecraft beschreven           -->
         <div id="AboutMcID">
 
-        <h1>What is Minecraft?</h1>
+        <h2 id="AboutMcClass-H2">What is Minecraft?</h2>
 
-          <div id="AboutMc-Container">
+          <div class="AboutMc-Container">
               <img alt="Zombie Riding a Chicken" src="./images/AboutMincecraft/ZombieChicken.png">
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, quam id suscipit suscipit, nulla nisi auctor leo, ac pellentesque nulla nibh sit amet ligula. Maecenas sem purus, ultrices vitae risus id, tempus facilisis neque. Fusce eu venenatis diam. Quisque vel justo et orci rutrum cursus. Sed posuere cursus dictum. Quisque ullamcorper non enim ut euismod. Aliquam malesuada ex at risus molestie tempor.
-                  Nam quis justo orci. Integer molestie commodo porta. Nunc eleifend tristique orci a viverra. Nam congue porta augue eget rhoncus. In fringilla diam at eros lacinia faucibus. Praesent aliquam eros vel orci faucibus, in sagittis lacus efficitur. Mauris non magna tristique ipsum rutrum eleifend in id massa. Aenean eget consectetur sapien, suscipit fermentum diam. Sed fermentum eros id viverra hendrerit. Proin non lorem ac sapien varius rhoncus. Nunc congue nisi at nibh auctor sodales. Etiam accumsan ultricies est nec bibendum.
-              </p>
+
+              <div class="InfoMc-One">
+                  <h3>Test</h3>
+                  <article>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, quam id suscipit suscipit, nulla nisi auctor leo, ac pellentesque nulla nibh sit amet ligula. Maecenas sem purus, ultrices vitae risus id, tempus facilisis neque. Fusce eu venenatis diam. Quisque vel justo et orci rutrum cursus. Sed posuere cursus dictum. Quisque ullamcorper non enim ut euismod. Aliquam malesuada ex at risus molestie tempor.
+                          Nam quis justo orci. Integer molestie commodo porta. Nunc eleifend tristique orci a viverra. Nam congue porta augue eget rhoncus. In fringilla diam at eros lacinia faucibus. Praesent aliquam eros vel orci faucibus, in sagittis lacus efficitur. Mauris non magna tristique ipsum rutrum eleifend in id massa. Aenean eget consectetur sapien, suscipit fermentum diam. Sed fermentum eros id viverra hendrerit. Proin non lorem ac sapien varius rhoncus. Nunc congue nisi at nibh auctor sodales. Etiam accumsan ultricies est nec bibendum.
+                  </article>
+              </div>
           </div>
         </div>
 

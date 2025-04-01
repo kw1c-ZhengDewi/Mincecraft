@@ -69,7 +69,7 @@ Datum: 29-03-2025
               <img alt="Zombie Riding a Chicken" src="./images/AboutMincecraft/ZombieChicken.png">
 
               <div class="InfoMc-One">
-                  <h3>Test</h3>
+                  <h3>Why this quiz</h3>
                   <article>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, quam id suscipit suscipit, nulla nisi auctor leo, ac pellentesque nulla nibh sit amet ligula. Maecenas sem purus, ultrices vitae risus id, tempus facilisis neque. Fusce eu venenatis diam. Quisque vel justo et orci rutrum cursus. Sed posuere cursus dictum. Quisque ullamcorper non enim ut euismod. Aliquam malesuada ex at risus molestie tempor.
                           Nam quis justo orci. Integer molestie commodo porta. Nunc eleifend tristique orci a viverra. Nam congue porta augue eget rhoncus. In fringilla diam at eros lacinia faucibus. Praesent aliquam eros vel orci faucibus, in sagittis lacus efficitur. Mauris non magna tristique ipsum rutrum eleifend in id massa. Aenean eget consectetur sapien, suscipit fermentum diam. Sed fermentum eros id viverra hendrerit. Proin non lorem ac sapien varius rhoncus. Nunc congue nisi at nibh auctor sodales. Etiam accumsan ultricies est nec bibendum.
@@ -79,7 +79,6 @@ Datum: 29-03-2025
         </div>
 
     </main>
-
     <?php include __DIR__ . '/includes/footer.php'; ?>
 </div>
 

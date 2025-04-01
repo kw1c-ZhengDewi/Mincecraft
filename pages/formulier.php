@@ -72,7 +72,7 @@ include "../functions/func.php";
 
 
 
-// Function to determine the highest scoring personality
+
 
 
 
@@ -153,7 +153,7 @@ include "../functions/func.php";
 
     <input type="submit" value="Submit">
 </form>
-
+  <!--Function to determine the highest scoring personality-->
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
             <h3>Congrats, you are <?php echo $chosenperson; ?>!</h3> <!--select personality with highest score-->
     <p>Steve: <?php echo $personalityA; ?> points</p> <!--TEMP, om te zien of point allocation werkt-->

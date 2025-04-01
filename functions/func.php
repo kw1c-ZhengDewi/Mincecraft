@@ -12,8 +12,7 @@ function get_personality($personalityA, $personalityB, $personalityC, $personali
     $chosenperson = key($personalities); // Get highest scorer
 
     // Set cookie (valid for 30 days, secure and HTTP-only)
-    //setcookie("personality", "aaa", time() + (86400 * 30), "/", "", true, true);
-    setcookie("personality", "aaa", 10000000, "/", "");
+    setcookie("personality", "$chosenperson", time() + (86400 * 1), "/", "", true, true);
     return $chosenperson;
 }
 ?>

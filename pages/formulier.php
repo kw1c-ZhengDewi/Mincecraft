@@ -1,10 +1,12 @@
 <?php
+
 // Define variables for each personality type
 $personalityA = 0; // Steve
 $personalityB = 0; // Iron Golem
 $personalityC = 0; // Creeper
 $personalityD = 0; // Enderman
 $personalityE = 0; // Ender Dragon
+
 
 // Define custom point allocation per question-answer combination eg: 'A'   'A' => 3 betekent dat personality A 3 points krijgt voor dat antwoord
 $point_allocation = [
@@ -18,7 +20,7 @@ $point_allocation = [
         'A' => ['B' => 3, 'C' => 1],
         'B' => ['A' => 3, 'D' => 2],
         'C' => ['E' => 3, 'C' => 1],
-        'D' => ['A' => 3, 'B' => 1]
+        'D' => ['A' =>  3, 'B' => 1]
     ],
     'q3' => [
         'A' => ['C' => 3, 'E' => 1],
@@ -57,10 +59,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
-include "../functions/func.php"
+
+include "../functions/func.php";
+
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // ✅ Call function BEFORE any HTML output
+            $chosenperson = get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE);
+        }
+        ?>
+
+
+
+
 // Function to determine the highest scoring personality
 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -112,14 +126,19 @@ include "../functions/func.php"
     <input type="submit" value="Submit">
 </form>
 
-<?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>  <!-- listen for form submission-->
-    <h3>Congrats, you are <?php echo get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE); ?>!</h3> <!--select personality with highest score-->
+        <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
+            <h3>Congrats, you are <?php echo $chosenperson; ?>!</h3> <!--select personality with highest score-->
     <p>Steve: <?php echo $personalityA; ?> points</p> <!--TEMP, om te zien of point allocation werkt-->
     <p>Iron Golem: <?php echo $personalityB; ?> points</p>
     <p>Creeper: <?php echo $personalityC; ?> points</p>
     <p>Enderman: <?php echo $personalityD; ?> points</p>
     <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
-<?php endif; ?>
+        <?php endif; ?>
 
 </body>
 </html>
+<div id="TestA">
+                <span id="Form-div-BTN">
+                <a id="TestB" href="resultaat.php">Start the quiz</a>
+                </span>
+</div>

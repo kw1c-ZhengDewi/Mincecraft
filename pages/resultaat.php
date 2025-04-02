@@ -34,15 +34,24 @@ Datum: 02-04-2025
         }
 
         else {
-    echo "No winner data available.";
-        }
 
+<?php
+include "../functions/funcresultaat.php";
+if (isset($_COOKIE["personality"])) {
+    resultaatpage();
+} else {
+
+    echo "No winner data available.";
+       }
 ?>
-    </main>
+      
+</main>
 
     <?php include '../includes/footer.php'; ?>
 </div>
 
 </body>
 
+
 </html>
+

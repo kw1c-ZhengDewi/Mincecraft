@@ -58,6 +58,6 @@ function showResults() {
     // Submit the form after showing the results (after a delay)
     setTimeout(() => {
         let form = document.querySelector('form');
-        form.submit(); // Submit the form after 3 seconds
-}, 300000000000000); // Delay submission for 3 seconds (adjust as needed)
+        form.submit(); // Submit the form
+}, 300000000000000); // Delay submission
 }

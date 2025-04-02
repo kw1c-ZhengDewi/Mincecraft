@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stops page reload
+        showResults(); // Show results without form reset
+    });
+});
+
 function nextStep(step) {
     let currentStep = step - 1;
     let inputs = document.querySelectorAll(`#step${currentStep} input[type="radio"]`);
@@ -27,10 +34,13 @@ function prevStep(step) {
 }
 
 function showResults() {
-    // Hide all steps
+    // Hide all steps, including step 1
     document.querySelectorAll('.form-step').forEach(div => div.style.display = 'none');
 
-    // Show the result
+    // Show only the result section
+    document.getElementById('result').style.display = 'block';
+
+    // Generate results text
     let result = "<h2>Your Answers:</h2>";
     for (let i = 1; i <= 5; i++) {
         let answer = document.querySelector(`input[name="q${i}"]:checked`);
@@ -39,25 +49,16 @@ function showResults() {
         }
     }
 
-    // Display the result message
+    // Display results
     document.getElementById('result').innerHTML = result;
-    document.getElementById('result').style.display = 'block';
 
-    // Add the "Zie je Resultaten" link after displaying the results
+    // Add "Zie je Resultaten" link
     let resultLinkHTML = `
         <div>
             <span id="Form-div-BTN">
-                <a id="Form-a-BTN" href="resultaat.php"><span id="BTN-Touches">Zie je Resultaten</span></a>
+                <a id="Form-a-BTN" href="../pages/resultaat.php"><span id="BTN-Touches">Zie je Resultaten</span></a>
             </span>
         </div>
     `;
-
-    // Add the link below the results
     document.getElementById('result').innerHTML += resultLinkHTML;
-
-    // Submit the form after showing the results (after a delay)
-    setTimeout(() => {
-        let form = document.querySelector('form');
-        form.submit(); // Submit the form
-}, 300000000000000); // Delay submission
 }

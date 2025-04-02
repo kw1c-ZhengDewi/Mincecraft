@@ -32,5 +32,13 @@ body {
     margin: 5rem;
 }
 
+table {
+    margin: auto;
+}
+
+.radio-position {
+    bottom: 10px;
+    position: relative;
+}
 
 

@@ -27,5 +27,5 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
 
 // Automatically call showSlides() again after 2 seconds to create a slideshow effect
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 4800);
 }

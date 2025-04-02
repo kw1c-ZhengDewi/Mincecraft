@@ -22,7 +22,6 @@ body {
     backdrop-filter: blur(2px); /* Slight blur effect for a smooth look */
     font-family: "Roboto-Remix-Font", serif;
     background-size: contain; /* Cover the entire viewport */
-    height: 100vw; /* Ensure it takes the full viewport height */
 }
 
 

@@ -6,7 +6,6 @@ Datum: 01-04-2025
 -->
 <head>
     <?php
-
     // Define variables for each personality type
     $personalityA = 0; // Steve
     $personalityB = 0; // Iron Golem
@@ -84,9 +83,15 @@ Datum: 01-04-2025
 
     <!--  stylesheet only for this page  -->
     <link rel="stylesheet" href="../styles/formulier.css">
-    <script src="../scripts/form.js" > </script>
+    <script src="../scripts/form.js" defer></script>
 </head>
 <body>
+
+
+<header>
+    <?php include '../includes/navigation.php'; ?>
+</header>
+
 
 <div class="quiz-container">
 <h2>Personality Quiz</h2>

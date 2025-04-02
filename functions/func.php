@@ -1,3 +1,7 @@
+<!--
+Auteurs: Dewi, Connor, Damian
+Datum: 02-04-2025
+-->
 <?php
 function get_personality($personalityA, $personalityB, $personalityC, $personalityD, $personalityE) {
     $personalities = [

@@ -161,9 +161,10 @@ Datum: 01-04-2025
             <button type="button" onclick="showResults()">Submit</button>
         </div>
 
-        <!-- Result Section -->
-        <div id="result" style="display:none;"></div>
     </form>
+
+    <!-- Result Section -->
+    <div id="result" style="display:none;"></div>
 
   <!--Function to determine the highest scoring personality-->
         <?php if ($_SERVER["REQUEST_METHOD"] === "POST") : ?>
@@ -173,6 +174,7 @@ Datum: 01-04-2025
     <p>Creeper: <?php echo $personalityC; ?> points</p>
     <p>Enderman: <?php echo $personalityD; ?> points</p>
     <p>Ender Dragon: <?php echo $personalityE; ?> points</p>
+
         <?php endif; ?>
 
 </div>

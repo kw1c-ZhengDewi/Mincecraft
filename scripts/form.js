@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Stops page reload
+        event.preventDefault(); // Prevent page reload
         showResults(); // Show results without form reset
+
+        // Submit the form programmatically after showing results
+        document.querySelector("form").submit();
     });
 });
+
+
 
 function nextStep(step) {
     let currentStep = step - 1;
@@ -61,4 +66,5 @@ function showResults() {
         </div>
     `;
     document.getElementById('result').innerHTML += resultLinkHTML;
+
 }

@@ -29,13 +29,6 @@ Datum: 02-04-2025
 
     <main>
         <?php
-        if (isset($_COOKIE["personality"])) {
-    echo "Congrats, you are a " . $_COOKIE["personality"] . "<br>";
-        }
-
-        else {
-
-<?php
 include "../functions/funcresultaat.php";
 if (isset($_COOKIE["personality"])) {
     resultaatpage();
@@ -54,4 +47,3 @@ if (isset($_COOKIE["personality"])) {
 
 
 </html>
-

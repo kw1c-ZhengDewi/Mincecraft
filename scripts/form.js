@@ -1,64 +1,57 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Stops page reload
-        showResults(); // Show results without form reset
-    });
-});
 
-function nextStep(step) {
-    let currentStep = step - 1;
-    let inputs = document.querySelectorAll(`#step${currentStep} input[type="radio"]`);
-
-    let selected = Array.from(inputs).some(input => input.checked);
-    if (!selected) {
-        alert("Please select an answer before proceeding.");
-        return;
-    }
-
+    function nextStep(stepNumber) {
     // Hide all steps
-    document.querySelectorAll('.form-step').forEach(div => div.style.display = 'none');
-    document.getElementById('step' + step).style.display = 'block';
+    const steps = document.querySelectorAll('.form-step');
+    steps.forEach(step => step.style.display = 'none');
 
-    // If it's the last step, show the results before submitting
-    if (step === 6) {
-        showResults();
-    }
+    // Show the next step
+    const next = document.getElementById('step' + stepNumber);
+    if (next) {
+    next.style.display = 'block';
+}
 }
 
-function prevStep(step) {
+    function prevStep(stepNumber) {
     // Hide all steps
-    document.querySelectorAll('.form-step').forEach(div => div.style.display = 'none');
+    const steps = document.querySelectorAll('.form-step');
+    steps.forEach(step => step.style.display = 'none');
 
     // Show the previous step
-    document.getElementById('step' + step).style.display = 'block';
+    const prev = document.getElementById('step' + stepNumber);
+    if (prev) {
+    prev.style.display = 'block';
+}
 }
 
-function showResults() {
-    // Hide all steps, including step 1
-    document.querySelectorAll('.form-step').forEach(div => div.style.display = 'none');
-
-    // Show only the result section
-    document.getElementById('result').style.display = 'block';
-
-    // Generate results text
-    let result = "<h2>Your Answers:</h2>";
-    for (let i = 1; i <= 5; i++) {
-        let answer = document.querySelector(`input[name="q${i}"]:checked`);
-        if (answer) {
-            result += `<p>Question ${i}: ${answer.parentElement.innerText.trim()}</p>`;
+    function showResults() {
+        const form = document.querySelector('form');
+        const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+        for (const name of questions) {
+            const checked = form.querySelector(`input[name="${name}"]:checked`);
+            if (!checked) {
+                alert('Beantwoord alle vragen voordat je verdergaat.');
+                return;
+            }
         }
+
+        // Submit via fetch to allow cookies to be set without reloading
+        const formData = new FormData(form);
+        fetch('', {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            if (response.ok) {
+                // Hide the form and show a thank you message with a link
+                form.style.display = 'none';
+                const resultDiv = document.getElementById('result');
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = `
+        <h3>Bedankt voor het invullen!</h3>
+        <p>Je kunt je resultaat bekijken op <a href="../pages/resultaat.php">deze pagina!</a>.</p>
+      `;
+            } else {
+                alert('Er is iets misgegaan. Probeer het opnieuw.');
+            }
+        });
     }
 
-    // Display results
-    document.getElementById('result').innerHTML = result;
-
-    // Add "Zie je Resultaten" link
-    let resultLinkHTML = `
-        <div>
-            <span id="Form-div-BTN">
-                <a id="Form-a-BTN" href="../pages/resultaat.php"><span id="BTN-Touches">Zie je Resultaten</span></a>
-            </span>
-        </div>
-    `;
-    document.getElementById('result').innerHTML += resultLinkHTML;
-}

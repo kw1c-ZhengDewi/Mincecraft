@@ -37,7 +37,6 @@
             <li id="A-Search">
                 <a href="#">Search</a>
             </li>
-
             <li id="A-Account">
                 <a href="#">Account</a>
             </li>

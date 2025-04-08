@@ -16,7 +16,7 @@ echo "CONGRATS YOU ARE AN IRON GOLEM <br><br>
 Hammered, shaped, and given purpose. <br>
 Based on your answers your a builder. <br>
 Your very creative and like to build beautiful structures. <br>
-We suggest u to play modpacks like Create and skyblock!
+We suggest you to play modpacks like Create and skyblock!
 ";
 }
 elseif ($_COOKIE["personality"] == "Creeper")  {

@@ -83,6 +83,8 @@ Datum: 01-04-2025
 
     <!--  stylesheet only for this page  -->
     <link rel="stylesheet" href="../styles/formulier.css">
+
+
     <script src="../scripts/form.js" defer></script>
 </head>
 <body>
@@ -169,6 +171,7 @@ Datum: 01-04-2025
   <!--Function to determine the highest scoring personality-->
         <?php if ($_SERVER["REQUEST_METHOD"] === "POST") : ?>
             <h3>Congrats, you are <?php echo $chosenperson; ?>!</h3> <!--select personality with the highest score-->
+
     <p>Steve: <?php echo $personalityA; ?> points</p> <!--TEMP, om te zien of point allocation werkt-->
     <p>Iron Golem: <?php echo $personalityB; ?> points</p>
     <p>Creeper: <?php echo $personalityC; ?> points</p>

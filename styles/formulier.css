@@ -1,3 +1,36 @@
+
+/* Algemene stijlen */
+* {
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+    font-family: "minecraftia", serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(../images/Wallpaper-BG/Dirtblock.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    background-color: rgba(19, 18, 18, 0.9);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.73);
+    backdrop-filter: blur(10px);
+
 /*
 Auteurs: Dewi, Connor, Damian
 Datum: 01-04-2025
@@ -14,8 +47,95 @@ Datum: 01-04-2025
 @font-face {
     font-family: 'Roboto-Remix-Font';
     src: url("../fonts/roboto-remix-font/Minecraftchmc-dBlX.ttf");
+
 }
 
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+
+#nav-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#nav-header a:hover {
+    color: #86D562;
+}
+
+.Logo-header {
+    width: 150px;
+    padding: 8px;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #86D562;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6bb04a;
+}
+
+/* Footer */
+footer {
+    background-color: #181818;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#Social-Media-Container {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#SM-links img {
+    width: 50px;
+    background-color: #282828;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
 
 body {
     background-image: url('../images/Wallpaper-BG/Dirtblock.png');
@@ -39,6 +159,35 @@ table {
 .radio-position {
     bottom: 10px;
     position: relative;
+
 }
 
+/* Responsiveness */
+@media (max-width: 1024px) {
+    #nav-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+
+    #SM-links img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo-header {
+        width: 100px;
+    }
+}
 

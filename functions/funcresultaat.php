@@ -3,7 +3,7 @@
 function resultaatpage()
 {
 if ($_COOKIE["personality"] == "Steve")  {   //check if personality cookie is gezet als steve, print steve text
-echo "CONGRATS YOU ARE STEVE
+echo "CONGRATS YOU ARE STEVE<br>
 you are a person who likes to explore! <br>
 Every block is a new adventure <br>
 If u play the following modpacks uou will get the best experience and maps:

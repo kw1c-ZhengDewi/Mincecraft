@@ -10,7 +10,7 @@ Datum: 29-03-2025
     <link rel="icon" type="image/x-icon" href="/images/Header-Icons/Favicon/favicon.ico">
     <title>Mincecraft</title>
 
-    <!-- stylesheet for all pages  -->
+    <!-- stylesheet for all pages   -->
     <link rel="stylesheet"
           href="<?php echo htmlspecialchars(dirname($_SERVER['SCRIPT_NAME']) . '/styles/stylesheet.css', ENT_QUOTES, 'UTF-8'); ?>">
     <!--  stylesheet only for this page  -->
@@ -69,9 +69,7 @@ Datum: 29-03-2025
 
             <div id="AboutMc-Container">
                 <img alt="Zombie Riding a Chicken" src="./images/AboutMincecraft/ZombieChicken.png">
-                <p>
-                    We are Damian, Dewi, and Connor passionate gamers dedicated to helping players find the perfect Minecraft modpacks and communities. Our platform offers a fun and interactive quiz that guides users to the best modpacks based on their preferences, making it easier to discover new adventures and like-minded players.
-                </p>
+                <p>We are Damian, Dewi, and Connor passionate gamers dedicated to helping players find the perfect Minecraft modpacks and communities. Our platform offers a fun and interactive quiz that guides users to the best modpacks based on their preferences, making it easier to discover new adventures and like-minded players.</p>
             </div>
         </div>
 

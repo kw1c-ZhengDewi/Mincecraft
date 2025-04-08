@@ -82,7 +82,8 @@ include "../functions/func.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personality Quiz</title>
-    <link rel="stylesheet" href="../styles/stylesheet..css">
+    <link rel="stylesheet" href="../styles/formulier.css">
+
 </head>
 <body>
 

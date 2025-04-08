@@ -18,30 +18,30 @@ Datum: 01-04-2025
         'q1' => [
             'A' => ['A' => 3, 'B' => 1],
             'B' => ['B' => 3, 'D' => 1],
-            'C' => ['C' => 3, 'A' => 1],
+            'C' => ['C' => 3, 'E' => 3],
             'D' => ['D' => 3, 'C' => 1]
         ],
         'q2' => [
             'A' => ['A' => 3, 'C' => 1],
-            'B' => ['B' => 3, 'D' => 2],
+            'B' => ['B' => 3, 'D' => 1],
             'C' => ['C' => 3, 'A' => 1],
-            'D' => ['D' =>  3, 'B' => 1]
+            'D' => ['D' =>  3, 'E' => 3]
         ],
         'q3' => [
-            'A' => ['A' => 3, 'E' => 1],
-            'B' => ['B' => 3, 'E' => 2],
+            'A' => ['A' => 3, 'E' => 3],
+            'B' => ['B' => 3, 'E' => 1],
             'C' => ['C' => 3, 'D' => 1],
             'D' => ['D' => 3, 'B' => 1]
         ],
         'q4' => [
-            'A' => ['A' => 3, 'E' => 1],
+            'A' => ['A' => 3, 'E' => 3],
             'B' => ['B' => 3, 'C' => 1],
             'C' => ['C' => 3, 'A' => 1],
             'D' => ['D' => 3, 'B' => 1]
         ],
         'q5' => [
             'A' => ['A' => 3, 'C' => 1],
-            'B' => ['B' => 3, 'D' => 1],
+            'B' => ['B' => 3, 'E' => 3],
             'C' => ['C' => 3, 'A' => 1],
             'D' => ['D' => 3, 'B' => 1]
         ]
@@ -114,7 +114,7 @@ Datum: 01-04-2025
                 <tr><td colspan="2"><label>2. Speel je liever samen met mensen of alleen?</label></td></tr>
                 <tr><td><label class="radio-position"><input type="radio" name="q2" value="A" required></label> Ik speel graag rustig alleen.</td></tr>
                 <tr><td><label class="radio-position"><input type="radio" name="q2" value="B"></label> Ik speel het liefste in een grote groep mensen!</td></tr>
-                <tr><td><label class="radio-position"><input type="radio" name="q2" value="C"></label> Ik speel graag met anderen maar woon apart.</td></tr>
+                <tr><td><label class="radio-position"><input type="radio" name="q2" value="C"></label> Ik speel graag met anderen, maar woon apart.</td></tr>
                 <tr><td><label class="radio-position"><input type="radio" name="q2" value="D"></label> Ik speel graag tegen anderen in PVP!</td></tr>
             </table>
 

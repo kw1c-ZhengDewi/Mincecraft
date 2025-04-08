@@ -22,7 +22,6 @@ Datum: 29-03-2025
 </head>
 
 <body>
-
 <div id="site-wrapper-footer">
     <header>
         <?php include __DIR__ . '/includes/navigation.php'; ?>

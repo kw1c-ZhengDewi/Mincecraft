@@ -46,11 +46,6 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex: 1; /* This pushes the footer down */
-}
-
-
 header {
     top: 0;
     z-index: 2;

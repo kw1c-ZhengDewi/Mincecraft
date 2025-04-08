@@ -241,6 +241,33 @@ footer {
     cursor: pointer;
 }
 
+/* Base styling for all social media and footer icons */
+#SM-links img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#SM-links img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+a img {
+    display: inline-block;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.footer-img-sizing a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 /* responsiveness */
 
         @media (min-width: 475px) {

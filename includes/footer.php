@@ -49,26 +49,21 @@
     <div id="footer-container">
         <!-- Boven Linkerkant -->
         <div class="footer-img-sizing">
-            <a href="https://www.minecraft.net/" target="_blank">
-                <img class="footer-img-sizing" src="../images/Footer-Images/Mojang2020Logo.png" alt="Mojang Studios logo">
-            </a>
-            <a href="https://www.xbox.com/en-US/xbox-game-studios" target="_blank">
-                <img class="footer-img-sizing" src="../images/Footer-Images/Logo_Xbox_Game_Studio.png" alt="Xbox Game Studios logo">
-            </a>
+            <img class="footer-img-sizing" src="../images/Footer-Images/Mojang2020Logo.png" alt="Mojang Studios logo">
+            <img class="footer-img-sizing" src="../images/Footer-Images/Logo_Xbox_Game_Studio.png" alt="Xbox Game Studios logo">
         </div>
     </div>
 
-    <!-- Onder Rechterkant -->
+    <!-- Onder Rechterkant   -->
     <div id="BottomFooter" class="footer-img-sizing">
         <div>
-            <a href="https://www.microsoft.com/" target="_blank">
-                <img class="footer-img-sizing" src="../images/Footer-Images/Logo_Microsoft.svg" alt="Microsoft Logo for the footer">
-            </a>
+            <img class="footer-img-sizing" src="../images/Footer-Images/Logo_Microsoft.svg" alt="Microsoft Logo for the footer">
         </div>
     </div>
+</footer>
 
 
-    <!--<div class="footer-mojang">-->
+<!--<div class="footer-mojang">-->
 <!--    <img src="../images/Footer-Images/Mojang2020Logo.png" alt="Mojang Studios logo">-->
 <!--</div>-->
 <!---->

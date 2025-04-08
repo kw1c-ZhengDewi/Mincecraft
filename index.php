@@ -62,23 +62,25 @@ Datum: 29-03-2025
         </div>
         </div>
 
-
-
         <!--  Hier wordt Minecraft beschreven           -->
         <div id="AboutMcID">
 
-        <h1>What is Minecraft?</h1>
+        <h2 id="AboutMcClass-H2">What is Minecraft?</h2>
 
-          <div id="AboutMc-Container">
+          <div class="AboutMc-Container">
               <img alt="Zombie Riding a Chicken" src="./images/AboutMincecraft/ZombieChicken.png">
-              <p>
-                  We are Damian, Dewi, and Connor passionate gamers dedicated to helping players find the perfect Minecraft modpacks and communities. Our platform offers a fun and interactive quiz that guides users to the best modpacks based on their preferences, making it easier to discover new adventures and like-minded players.
-              </p>
+
+              <div class="InfoMc-One">
+                  <h3>About us</h3>
+                  <article>
+                      We are the CodeCrafters <br><br>
+                      Our Team is Damian, Dewi, and Connor are passionate gamers dedicated to helping players find the perfect Minecraft modpacks and communities. Our platform offers a fun and interactive quiz that guides users to the best modpacks based on their preferences, making it easier to discover new adventures and like-minded players.
+                  </article>
+              </div>
           </div>
         </div>
 
     </main>
-
     <?php include __DIR__ . '/includes/footer.php'; ?>
 </div>
 

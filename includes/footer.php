@@ -44,8 +44,6 @@
         </div>
     </div>
 
-
-
     <div id="footer-container">
         <!-- Boven Linkerkant -->
         <div class="footer-img-sizing">
@@ -63,14 +61,3 @@
 </footer>
 
 
-<!--<div class="footer-mojang">-->
-<!--    <img src="../images/Footer-Images/Mojang2020Logo.png" alt="Mojang Studios logo">-->
-<!--</div>-->
-<!---->
-<!--<div class="footer-xbox">-->
-<!--    <img src="../images/Footer-Images/Logo_Xbox_Game_Studio.png" alt="Xbox Game Studios logo">-->
-<!--</div>-->
-<!---->
-<!--<div class="footer-microsoft">-->
-<!--    <img src="../images/Footer-Images/Logo_%20Microsoft.svg" alt="Microsoft logo">-->
-<!--</div>-->

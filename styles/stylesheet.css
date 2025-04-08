@@ -196,7 +196,8 @@ footer {
 }
 
 .footer-img-sizing {
-    padding: 1rem;
+    padding: 0.5rem;
+    white-space: nowrap;
 }
 
 #BottomFooter{
@@ -216,7 +217,7 @@ footer {
     text-align: center;
     width: 100%;
     margin: 0;
-    padding: 2.5rem;
+    padding: 1.1rem;
     background: black;
     text-transform: uppercase !important;
 
